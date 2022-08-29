@@ -9,4 +9,12 @@ export class SongList extends Component {
   }
 }
 
-export default connect()(SongList)
+// hold sa state or data from reducer 
+// how do we have access sa state its because ddto sa index.js nag hatag ta ug "Provider" and nag add pud ta ug props ma "store={createStore(reducers)}"
+const mapStateToProps = (state) => {
+    console.log(state)
+
+    return state
+}
+
+export default connect(mapStateToProps)(SongList)

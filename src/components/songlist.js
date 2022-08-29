@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 
 export class SongList extends Component {
     render() {
-        // naa natai access sa state and sa dispatch, we have access state because sa mapStateToProps
+        // naa natai access sa state and sa dispatch, we have access state because sa mapStateToProps but if wala pud ta nag butang 'store' sa atong 'Provider' dili pud ta ka access sa state and dispatch
         console.log(this.props)
         return (
         <div>SongList</div>

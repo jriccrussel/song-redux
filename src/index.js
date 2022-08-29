@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './components/App'
 import reportWebVitals from './reportWebVitals';
-import { createStoreHook, Provider } from 'react-redux'
+import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import reducers from './reducers'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* state and dispatch can now be access globally */}
     <Provider store={createStore(reducers)}>
       <App />
     </Provider>
